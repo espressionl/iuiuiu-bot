@@ -18,7 +18,7 @@ async def on_ready() -> None:
 @client.event
 async def on_thread_create(thread: Thread) -> None:
 
-    observed_forums: list = ['testforum']
+    observed_forums: list = ['install-help-gc','install-help-gcp','install-help-silvia','install-help-gaggia-other','install-help-experimental-zone']
 
     if thread.parent.name not in observed_forums:
         return
